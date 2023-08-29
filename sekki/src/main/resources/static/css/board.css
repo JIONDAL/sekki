@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+.boardForm{cursor: pointer; margin-top: 30px; text-align: center; width:70%;} 
+.boardForm li{
+	text-align: left;
+	box-sizing: border-box;
+	width:380px;
+	height:150px;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.375rem;
+    overflow: hidden;
+    padding: 1.25rem 1rem;
+    display:inline-block;
+    margin:5px;
+    position:relative; 
+    }
+.boardForm li:hover{
+	border-width: 2px;
+	background-color: #eaebee;
+}
+.top{
+	padding:5px 0 10px 50px;
+}
+.down{
+	padding:5px;
+}
+#Bid{
+	font-size: 17px;
+	font-weight: 600;
+	color: #2d85cc;
+}
+#Btitle{
+	font-size: 16px;
+	color:#000;
+	font-weight: 500;
+}
+#BwriteDate{
+	font-size:12px;
+	position:absolute;
+	top:10px;
+	right:70px;
+	color:#616161;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+#Bhits{
+	font-size:12px;
+	position:absolute;
+	top:10px;
+	right:15px;
+	color:#868b94;
+	letter-spacing: -0.5px;
+}
+#Bcontent{
+	line-height: 120%;
+	font-size:15px;
+	color:#000;
+}
+
+#person{
+	color:#001D3D;
+	font-size: 50px;
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+#thumb{
+	color:#868b94;
+	font-size: 15px;
+	position:absolute;
+	bottom:10px;
+	right:35px;
+}
+#Blikes{
+	color:#868b94;
+	font-size:12px;
+	position:absolute;
+	bottom:10px;
+	right: 19px;
+	letter-spacing: -0.5px;
+}
+/*.boardList{color:#fff;}*/
+
+.community_div{
+	height: 685px; 
+	padding: 50px 0 0 0; 
+}
+.community_div h1 > span{color:#ffc300;}
+.boardForm{font-size: 18px; text-align: center;}
+.boardForm th{border-bottom:2px #003566 solid; border-top: 2px #003566 solid;}
+.boardForm td{
+	border-bottom: 1px gainsboro solid;
+}
+
+.tail{
+	position:relative;
+	width:900px;
+	text-align: center;
+}
+.boardList{
+	position:absolute;
+	top:10px;
+	left:45%;
+}
+.sch{
+	position:absolute;
+	top:-50px;
+	left:0;
+}
+.sch input[type=submit]{
+	height:40px;
+	cursor: pointer;
+	position:absolute;
+	top:0px;
+	left:205px;
+	background-color: #ffD60A;
+	border:none;
+	color:#fff;
+	font-weight: 900;
+}
+
+.sch input[type=submit]:hover{
+	color: #003566;
+	font-weight: 900;
+}
+.sch input:hover{
+	border-color: #ffD60A;
+}
+.sch input:focus{
+	border-color: #ffD60A;
+	border-width: 2px;
+}
+.tail span{
+	position:absolute;
+	left:23%;
+	top:8px;
+}
+.tail button{
+	position:absolute;
+	right:3%;
+	top:-20px;
+}
+
+.boardContent{
+	position: absolute;
+	width:500px;
+	box-sizing: border-box;
+    border: 10px solid #000;
+    border-top: 25px solid #000;
+	border-bottom: 25px solid #000;
+    border-radius: 1%;
+    overflow: hidden;
+    display:inline-block;
+    margin:5px;
+    position:relative; 
+    font-size: 16.5px;   
+    position: relative;
+}
+.boardContent tr:first-child td:first-child{
+	padding-left: 10px;
+}
+.boardContent tr:first-child span{
+	font-size: 30px;
+}
+.boardContent #wifi{
+	position: absolute;
+	top:0;
+	right:7%;
+	font-size: 25px;
+}
+.boardContent #battery{
+	position: absolute;
+	top:0;
+	right:1%;
+	font-size: 30px;
+}
+.boardContent tr:nth-child(2) th, 
+.boardContent tr:nth-child(2) td{
+	padding-top: 50px;
+}
+.boardContent tr:nth-child(2) th:nth-child(1),
+.boardContent tr:nth-child(3) th:nth-child(1){
+	padding-left:12px;	
+}
+.boardContent tr:nth-child(3) th, 
+.boardContent tr:nth-child(3) td{
+	padding-bottom: 40px;
+}
+.boardContent tr{
+	line-height: 125%;
+}
+.boardContent th{
+	width:80px;
+}
+.boardContent td{
+	font-size:16px;
+}
+#boardTitle{
+	padding-left: 20px;
+	font-size:24px;	
+	font-weight: 600;
+	text-align: left;
+	color: #001D3D;
+}
+.boardContent tr:nth-child(3) td:last-child {
+	cursor: pointer;
+	font-size: 13px;
+}
+.boardContent tr:nth-child(3) td:last-child:hover {
+	text-decoration: underline;
+	font-weight: 600;
+}
+.boardContent tr:nth-child(5) td{
+	padding:24px 20px 120px 30px;
+	font-size: 16.5px;
+	line-height: 145%;
+	color: #000;
+}
+.boardContent tr:last-child{
+	margin-top:20px;
+	position:absolute;
+	left:45%;
+	bottom:15px;
+}
+.boardContent tr:last-child td:first-child{
+	width:30px;
+	color:#2d85cc;
+	font-weight: 900;
+	cursor: pointer;
+}
+
+.phone {
+	position:fixed;
+	right:12%;
+	bottom:20%;
+	border: 0.0625rem solid #ddd;
+    width: 300px;
+    height: 600px;
+    background-color: #444;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+
+

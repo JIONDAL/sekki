@@ -1,0 +1,577 @@
+@charset "UTF-8";
+
+#wrap {
+	margin: 100px auto;
+	width: 1200px;
+	text-align: center;
+}
+
+#visual {
+	width: 100%;
+	height: 400px;
+	line-height: 400px;
+	background-image: url('../image/centerVisual.png');
+	padding-left: 18%;
+	/*글자쓰기 위함*/
+	color: #fff;
+	font-size: 40px;
+}
+
+#memberMenu {
+	position: fixed;
+	top: 65%;
+	left: 130px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	width: 210px;
+}
+
+#memberMenu ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	text-align: left;
+}
+
+#memberMenu a {
+	text-decoration: none;
+	font-size: 16px;
+	width: 100%;
+	padding: 15px 0px;
+}
+
+#memberMenu ul a:nth-child(1) {
+	background-color: #003566;
+	color: #fff;
+	font-size: 20px;
+	padding: 20px 0px;
+}
+
+#memberMenu a:hover {
+	color: #fff;
+	background-color: #003566;
+}
+
+#memberMenu .selected {
+	background-color: rgb(240, 255, 255);
+}
+
+#memberMenu .selected li {
+	font-weight: 500;
+}
+
+#memberMenu a li {
+	padding: 25px;
+}
+
+.h80{
+	height: 80px;
+}
+/*로그인=====================================================================*/
+.loginProc, .loginTable, .logoutTable, .findTable{
+	margin: 0 auto;
+}
+.loginProc input{
+	width: 80%;
+}
+
+.loginTable, .logoutTable{
+	width: 30%;
+}
+
+.loginTable tr td{
+	width: 100%;
+	padding: 1px 0;
+}
+
+.loginTable h2,
+.logoutTable h2{
+	text-align: left;
+	padding-left: 34px;
+	padding-bottom: 10px;
+	letter-spacing: 1.5px;
+	font-family: 'Gamja Flower', cursive;
+	font-size: 35px;
+}
+
+.titleSpan{
+	font-size: 40px;
+	color: orange;
+	text-shadow: 1px 1px 0 rgb(109, 109, 109);  
+
+}
+
+.loginTable input[type="text"],
+.loginTable input[type="password"] {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.loginTable input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loginTable input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.loginTable .textBox td p{
+	padding: 15px 0;
+}
+.loginTable .textBox td:nth-child(1){
+	padding-right:42px;
+}
+.loginTable .textBox td:nth-child(2){
+	padding-right:35px;
+}
+.loginTable .textBox td:nth-child(1):hover,
+.loginTable .textBox td:nth-child(2):hover{
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.loginTable a img{
+	width: 320px;
+	height: 60px;
+}
+
+.logoutTable h2{
+	margin-bottom: 20px;
+}
+.logoutTable input[type="button"]{
+	width: 80%;
+	padding:7px 0 ;
+	font-size: 16px;
+	margin-bottom: 12px;
+	background-color: rgb(255, 150, 45);
+	border:none;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.logoutTable input[type="button"]:hover{
+	background-color: rgb(255, 179, 102);
+}
+/*약관동의&본인인증=====================================================================*/
+.agreeConditionTable{
+	margin: 0 auto;
+	text-align: left;
+	width: 80%;
+}
+.agreeConditionTable tr th{
+	border-bottom: 2px solid rgb(173, 173, 173);
+	padding-bottom: 25px;
+	font-size: 25px;
+}
+.agreeConditionTable tr td{
+	padding: 10px 0;
+	font-size: 18px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; 
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    background-color: rgb(255, 128, 0); 
+    border-color: rgb(255, 128, 0); 
+}
+
+.agreeCondition h1{
+	text-align: left;
+	padding: 20px 0 20px 125px;
+}
+.authenticationTable{
+	margin: 0 auto;
+	width: 80%;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.authenticationTable thead tr th{
+	padding: 30px 0;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+.authenticationTable thead tr .selected{
+	background-color: rgb(255, 182, 47);
+	font-weight: 600;
+}
+
+.authenticationTable tbody tr td input[type="text"]{
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 10px;
+}
+.authenticationTable tbody tr td input[type="button"]{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(200, 200, 200);
+	font-size: 15px;
+}
+.authenticationTable tbody tr td input[type="button"]:hover{
+	background-color: rgb(200, 200, 200);
+	cursor:pointer;
+}
+.nextStageDiv{
+	text-align: right;
+	padding-right: 120px;
+	display: none;
+}
+.nextStageDiv input[type="button"]{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	background-color: rgb(255, 182, 47);
+	font-size: 17px;
+	border: none;
+	cursor:pointer;
+	
+}
+.nextStageDiv input[type="button"]:hover{
+	background-color: rgb(255, 126, 64);
+	cursor:pointer;
+}
+
+.checkAuthenticationTd{
+	text-align: left;
+	color: orangered;
+	padding-top: 5px;
+	padding-left: 250px;
+}
+.checkAuthenticationTd:nth-child(1){
+	padding-bottom: 20px;
+}
+/*회원가입=====================================================================*/
+.registerProc{
+	margin: 0 auto;
+}
+.registerTable{
+	margin: 0 auto;
+	width: 60%;
+}
+.registerTable tr td{
+	padding: 10px 0;
+}
+.registerTable input{
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 4px;
+}
+.registerTable input:focus {
+    border-color: rgb(255, 128, 64);
+  }
+.registerTable input[type="text"],
+.registerTable input[type="password"]{
+	height: 50px;
+}
+.registerTable input[type="button"]{
+	height: 50px;
+	border: none;
+}
+.registerTable .searchDaumPostcode{
+	margin-bottom: 5px;
+	background-color: rgb(113, 113, 113);
+	color: #fff;
+	font-size: 15px;
+	width: 80%;
+}
+.registerTable .searchDaumPostcode:hover{
+	background-color: rgb(160, 160, 160);
+	cursor: pointer;
+}
+.registerTable .registerBtn{
+	background-color: rgb(255, 174, 23);
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	width: 100%;
+	color: #fff;
+}
+.registerTable .registerBtn:hover{
+	background-color: rgb(255, 129, 68);
+}
+
+.upfileStyle input[type="file"] {
+	display: none;
+}
+.upfileStyle .upload-name {
+	display: inline-block;
+	height: 47px;
+	line-height: 47px;
+	width: 78.1%;
+	color: #999999;
+	padding-left: 12px;
+	border:1.5px solid rgb(223, 223, 223);
+	margin-bottom: 2px;
+	font-weight: 400;
+	font-size: 15px;
+}
+.upfileStyle .fileLabel {
+	display: inline-block;
+	padding: 2px 10px;
+	color: #fff;
+	background-color: rgb(113, 113, 113);
+	cursor: pointer;
+	height: 42px;
+	line-height: 43px;
+	font-size: 17px;
+	width: 105px;
+	text-align: center;
+	margin-right: 28px;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+.upfileStyle .fileLabel:hover{
+	background-color: rgb(160, 160, 160);
+	cursor: pointer;
+}
+.idInput{
+	position: relative;
+}
+.idInput span{
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	font-size: 34px;
+}
+.pwInput{
+	position: relative;
+}
+.pwInput span{
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	font-size: 30px;
+}
+.confirmInput{
+	position: relative;
+}
+.confirmInput span{
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	font-size: 30px;
+}
+.mobileInput{
+	position: relative;
+}
+.mobileInput span{
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	font-size: 30px;
+}
+.emailInput{
+	position: relative;
+}
+.emailInput input[type="text"]{
+	width: 51%;
+	box-sizing: border-box;
+}
+.emailInput .emailSelect{
+	cursor: pointer;
+	height: 50px;
+}
+.emailInput select{
+	width: 48%;
+	height: 51px;
+	box-sizing: border-box;
+	margin-bottom: 2px;
+}
+.emailInput span{
+	position: absolute;
+	top: 21px;
+	right: 20px;
+	font-size: 30px;
+}
+.registerTable label{
+	color: orangered;
+	font-size : 14px;
+}
+/*아이디/비밀번호 찾기=====================================================================*/
+/*아이디 찾기*/
+.findTable{
+	width: 60%;
+	text-align: left;
+}
+.findTable  ul{
+	border-bottom: 2px solid rgb(255, 157, 60);
+	padding: 20px 0;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+.findTable  ul li:hover{
+	background-color: rgb(255, 235, 225);
+	cursor: pointer;
+}
+.findTable  ul .selected{
+	border: 2px solid  rgb(255, 157, 60);
+	border-bottom: none;
+}
+.findTable tr td h3{
+	padding: 20px 0;
+	padding-left: 40px;
+	position: relative;
+}
+
+.findTable tr td h3 span{
+	padding-right: 10px;
+	font-size: 28px;	
+	position: absolute;
+	top: 20px;
+	left: -4.2px;
+}
+.findTable input{
+	margin: 7px 0;
+	width: 300px;
+}
+.findTable input:focus {
+    border-color: rgb(255, 128, 64); /* 포커스 시 보더 색 변화 */
+  }
+.findTable label{
+	color: orangered;
+}
+.findTable .emailSelect{
+	height: 40px;
+	width: 300px;
+	cursor: pointer;
+}
+
+.findTable .tableHr{
+	width: 50%;
+	padding-top: 30px;
+	border-bottom: 1px solid rgb(192, 192, 192);
+}
+.findTable tr .findIdBtnTd{
+	text-align: center;
+	padding-top: 30px;
+}
+.findTable tr .findIdBtnTd input[type="button"]{
+	height: 40px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: rgb(255, 150, 45);
+	background-color: rgb(255, 150, 45);
+	border:none;
+	color: #fff;
+	font-weight: bold;
+}
+.findTable tr .findIdBtnTd input[type="button"]:hover{
+	background-color: rgb(255, 179, 102);
+}
+/*아이디 찾기 결과*/
+.findTable .findIdReultTd,
+.findTable .findPwReultTd{
+	margin-top: 50px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.findTable .findIdReultTd h2,
+.findTable .findPwReultTd h2{
+	color: rgb(85, 85, 85);
+	padding: 40px 0 30px 0;
+}
+.findTable .findIdReultTd p,
+.findTable .findPwReultTd p{
+	font-size: 20px;
+	padding: 20px 0 40px 0;
+}
+.findTable .findIdReultTd input[type="button"],
+.findTable .findPwReultTd input[type="button"]{
+	height: 40px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: rgb(255, 150, 45);
+	background-color: rgb(255, 150, 45);
+	border:none;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.findTable .findIdReultTd input[type="button"]:hover,
+.findTable .findPwReultTd input[type="button"]:hover{
+	background-color: rgb(255, 179, 102);
+}
+/*비밀번호 찾기*/
+.findTable h2{
+	padding-bottom: 30px;
+}
+.findTable .findPwIdInputTd{
+	margin-top: 50px;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 30px 0;
+}
+.findTable .findPwIdInputTd p{
+	color: rgb(255, 0, 0);
+	font-size: 18px;
+}
+.findTable .findPwIdInputTd h4{
+	text-align: left;
+	padding: 20px 0 5px 210px;
+	font-size: 20px;
+}
+.findTable .findPwIdInputTd .findPwCheckboxDiv{
+	text-align: left;
+	padding: 10px 0 30px 210px;
+	font-size: 18px;
+}
+
+.findTable .findPwIdInputTd input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid #ccc;
+   	width: 20px;
+	height: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    margin-right: 15px;
+}
+.findTable .findPwIdInputTd input[type="checkbox"]:checked {
+    background-color: rgb(255, 150, 45);
+    border-color: rgb(255, 150, 45);
+}
+
+.findTable .findPwIdInputTd input[type="button"]{
+	height: 40px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 16px;
+	background-color: rgb(255, 150, 45);
+	background-color: rgb(255, 150, 45);
+	border:none;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.findTable .findPwIdInputTd input[type="button"]:hover{
+	background-color: rgb(255, 179, 102);
+}
+.findTable .findPwReultTd p span{
+	font-weight: bold;
+}

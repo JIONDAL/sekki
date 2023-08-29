@@ -1,0 +1,566 @@
+/*recipeBoard css입니다람쥐*/
+
+
+ul.cate {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+ul.cate li {
+  display: inline-block;
+ border-right: 2px solid lightgreen;
+  padding: 10px 20px;
+  font-size: 25;
+
+}
+
+ul.cate li:last-child {
+  border-right: none;
+}
+
+/*recipeBoardWrite css입니다람쥐*/
+
+.mid_title{
+	font-size: 16px;
+	padding-bottom:20px;
+	line-height: 40px;
+}
+
+.recipe_p{
+	font-size: 13px;
+	color: rgb(94, 94, 94);
+	letter-spacing : -0.5px;
+}
+#full{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color:#f1f1f2;
+	
+}
+/*컨텐츠 기본 크기*/
+#width1200{
+	width: 1200px;
+	background-color: #f8f8f8;
+	font-size: 20px;
+	font-weight: bold;
+
+	margin: 10px auto;
+}
+/*컨텐츠 기본 크기*/
+
+
+/*컨텐츠 css 기본틀*/
+#cok_info{
+	position: relative;
+}
+.title{
+
+	background-color: rgb(209, 209, 209);
+		padding: 14px 18px;
+		border: 1px solid rgb(185, 185, 185);
+}
+.content_borad{
+	border-top: 10px solid #f1f1f2;
+}
+.cont_box{
+	padding: 26px 30px;
+
+border: 1px solid #e1e1e1;
+}
+
+.pd_l_60{
+	padding-left: 35px !important;
+}
+/*컨텐츠 css 기본틀*/
+
+.cok_title {
+  	background: #f5f5f5;
+  	width: 400px;
+    border: 1px solid #e1e1e1;
+    font-size: 16px;
+    padding-left: 15px;
+    height: 70px;
+    vertical-align: middle;
+    margin-top: -1px;
+    border-radius: 8px;
+
+}
+
+.photoBox{
+	position: absolute;
+	top:5%;
+	right: 10%;
+	border: 1px solid #e1e1e1;
+}
+
+input[type="text"]:focus{
+	border-color: rgb(161, 161, 161);
+}
+
+.content_pdding{
+	padding:20px 0px;
+}
+
+.name{
+	display: inline-block;
+	width:100px;
+		margin-right: 15px;
+}
+
+textarea{
+	border-radius: 8px;
+	width: 400px;
+	height: 100px;
+	background: #f5f5f5;
+
+	resize: none;
+}
+
+textarea:focus{
+	border-color: rgb(161, 161, 161);
+}
+
+.reci {
+	width: 200px;
+	background: #f5f5f5 url('../image/expand_more_FILL0_wght400_GRAD0_opsz48.png') no-repeat 95% 50%;
+	background-size: 30px;
+	border: 1px solid #999;
+	border-radius: 8px;
+	appearance: none;
+}
+
+.reci:focus{
+	border-color: rgb(161, 161, 161);
+}
+
+.info_n{
+	padding-right: 10px;
+	font-size: 15px;
+}
+
+.cok {
+	width: 150px;
+	background: #f5f5f5 url('../image/expand_more_FILL0_wght400_GRAD0_opsz48.png') no-repeat 95% 50%;
+	background-size: 30px;
+	border: 1px solid #999;
+	border-radius: 8px;
+	appearance: none;
+	margin-right: 10px;
+}
+
+.reciinfo:focus{
+	border-color: rgb(161, 161, 161);
+}
+
+
+/*컨텐츠 내부 css*/
+
+
+/*재료 추가 css*/
+
+/*합친곳*/
+.material_all{
+	width:100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 50px;
+}
+
+/*왼쪽*/
+.left_material{
+	width: 30%;
+	display : flex;
+	flex-direction: column;
+}
+
+.all_material_del{
+
+
+	border: 1px solid #e1e1e1;
+	background-color: #ffffff;
+	color: #333;
+	border-radius: 8px;
+	
+}
+
+.lf_material{
+	display: block;
+	width: 220px;
+
+	background-color: #fffdd7;
+	border: 1px solid #e1e1e1;
+	border-radius: 8px;
+}
+
+/*오ㅓ른쪽*/
+
+.coumngka{
+	display: flex;
+	flex-direction: column;
+}
+
+#materialContainer{
+	display: flex;
+	flex-direction: column;
+	margin:0px;
+}
+
+.materials_css{
+	width: 220px;
+	border: 1px solid #e1e1e1;
+	border-radius: 8px;
+	background: #f5f5f5;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+.right_btnadd{
+	display: block;
+
+	padding-left : 184px;
+	background-color:transparent;
+	
+}
+.removeMaterialButton{
+	margin-bottom: 15px;
+	margin-top:0px;
+	border: 0px;
+	background: url(//recipe1.ezmember.co.kr/img/btn_del2.gif) center no-repeat;
+}
+
+/*step*/
+.cok_step{
+	margin-top: 50px;
+	margin-left : 50px;
+	display: flex;
+	flex-direction: row;
+}
+.cok_step_p{
+	width:100px;
+}
+.step_text_STEP_css{
+height:160px; 
+width:430px;
+
+}
+
+.stepPhotoHolder_STEP_css{
+
+	width: 160px;
+  height: 160px;
+  cursor: pointer;
+  border: 1px solid #e1e1e1;
+  margin-left: 5px;
+}
+.cok_cute{
+	display:flex;
+	border: 1px solid #e1e1e1;
+	padding: 2px;
+	font-size: 16px;
+	width:60px;
+	justify-content: center;
+	margin-right:20px;
+	margin :5px 5px 5px 5px;
+	
+}
+
+.cok_set_plus{
+	width:310px;
+	display: flex;
+	flex-direction: row;
+	margin-left: 255px;
+	border: 2px solid #74b243;
+	border-radius: 8px;
+	margin-top:10px;
+	
+}
+
+.step_photoholder {
+    display: none;
+}
+
+.step_button{
+	margin-left: 330px;
+}
+/*마지막 div*/
+.last_div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*====================레시피 게시판==================*/
+.reicpeForm{
+	display: flex;
+
+	flex-wrap: wrap;
+	
+}
+.recipeForm_li{
+	width:30%;
+	
+	
+	
+}
+.recipeForm_li img{
+	width:350px;
+	height: 250px;
+}
+
+.pages {
+	margin-top: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+}
+/*====================레시피 게시판==================*/
+/*====================게시판 내부==================*/
+#main_con_info{
+	margin : 0 auto;
+
+	
+	padding-top: 40px;
+	width:760px;
+}
+.user_inffo{
+	
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	
+}
+.main_img_con{
+	display: block;
+
+}
+#user_info_con{
+	position: absolute;
+	bottom: -15%;
+	left: 45%;
+	text-align: center;
+}
+
+.user_profile_con{
+	
+	display: block;
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+}
+.main_img_con{
+	width:80%;
+	height:500px;
+}
+#user_info_con_text{
+	display: block;
+
+}
+
+.main_content{
+	margin : 80px 0 ;
+}
+#cook_info{
+	display: flex;
+	justify-content: center;
+
+}
+
+#cook_info li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 50px;
+}
+#cook_info li:last-child{
+	margin-right: 0;
+}
+#cook_info li img{
+	display: block;
+	width: 50px;
+}
+/*=================재료==================*/
+.mate_con{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.mate_con_list {
+  width: 42%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  border-bottom: 1px solid #ececec;
+  align-items: center; /* 세로 중앙 정렬 */
+}
+
+.mate_con_list:last-child {
+  margin-right: 0;
+}
+
+.mate_con_name {
+  margin-right: auto; /* 오른쪽 여백을 최대로 확장하여 오른쪽 정렬 */
+}
+
+.mate_con_alam {
+  margin-left: auto; /* 왼쪽 여백을 최대로 확장하여 오른쪽 정렬 */
+}
+/*=================재료==================*/
+/*=================step=================*/
+.step_con_list{
+	display: flex;
+	flex-direction: row;
+	margin : 20px 0;
+}
+.step_index {
+  display: flex;
+  align-items: center; /* 수직 가운데 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  width: 40px;
+  height: 40px;
+  background-color: #74b243;
+  border-radius: 50%;
+  color:#fff;
+  margin-right: 0;
+  
+}
+.step_texts{
+	line-height: 40px;
+	margin-left : 20px;
+}
+.step_con_img{
+	display: block;
+	margin-left: auto;
+	width: 300px;
+	height: 280px;
+	border-radius: 10px;
+}
+
+/*=================step=================*/
+/*=====================coment============*/
+.coments{
+	margin-top:20px;
+	display: flex;
+	margin-left : 30px;
+	
+}
+.coment_left{
+	margin-right:20px;	
+	
+}
+.coment_profile_div{
+	display: block;
+}
+.coment_profile{
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	
+}
+
+.coment_star_in{
+	width: 16px;
+	height: 16px;
+}
+.coment_inner{
+	display: flex;
+	flex-direction: column;
+	font-size: 17px;
+}
+.coment_right{
+	width:700px;
+}
+.coment_inner h4{
+	display: flex;
+	margin : 0;
+}
+.coment_content{
+	display: block;
+}
+
+.comnet_written{
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.comnet_written textarea{
+	width:80%;
+	
+}
+.comnet_written button{
+	height: 100px;
+	margin:0
+}
+.reci_up_da{
+	float: right;
+	background-color: #74b243;
+	border: #74b243;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+/*=====================별점================*/
+.starpoint_wrap{display:inline-block; margin-left: 50px;}
+.starpoint_box{position:relative;background:url(https://ido-archive.github.io/svc/etc/element/img/sp_star.png) 0 0 no-repeat;font-size:0;}
+.starpoint_box .starpoint_bg{display:block;position:absolute;top:0;left:0;height:18px;background:url(https://ido-archive.github.io/svc/etc/element/img/sp_star.png) 0 -20px no-repeat;pointer-events:none;}
+.starpoint_box .label_star{display:inline-block;width:10px;height:18px;box-sizing:border-box;}
+.starpoint_box .star_radio{opacity:0;width:0;height:0;position:absolute;}
+.starpoint_box .star_radio:nth-of-type(1):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(1):checked ~ .starpoint_bg{width:10%;}
+.starpoint_box .star_radio:nth-of-type(2):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(2):checked ~ .starpoint_bg{width:20%;}
+.starpoint_box .star_radio:nth-of-type(3):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(3):checked ~ .starpoint_bg{width:30%;}
+.starpoint_box .star_radio:nth-of-type(4):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(4):checked ~ .starpoint_bg{width:40%;}
+.starpoint_box .star_radio:nth-of-type(5):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(5):checked ~ .starpoint_bg{width:50%;}
+.starpoint_box .star_radio:nth-of-type(6):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(6):checked ~ .starpoint_bg{width:60%;}
+.starpoint_box .star_radio:nth-of-type(7):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(7):checked ~ .starpoint_bg{width:70%;}
+.starpoint_box .star_radio:nth-of-type(8):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(8):checked ~ .starpoint_bg{width:80%;}
+.starpoint_box .star_radio:nth-of-type(9):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(9):checked ~ .starpoint_bg{width:90%;}
+.starpoint_box .star_radio:nth-of-type(10):hover ~ .starpoint_bg,
+.starpoint_box .star_radio:nth-of-type(10):checked ~ .starpoint_bg{width:100%;}
+
+.blind{position:absolute;clip:rect(0 0 0 0);margin:-1px;width:1px;height: 1px;overflow:hidden;}
+
+.comment_drop{
+	float: right;
+}
+
+.dropdown-icon {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+/*=====================coment============*/
+
+/*====================게시판 내부==================*/
+
+
+

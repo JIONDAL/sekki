@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* 헤더 */
+#header{height:90px;}
+
+/* main */
+.mainLogo{float:left; padding-left:40px; margin-top: 10px;}
+.mainLogo img{width:250px; height:70px; }
+
+/* nav */
+.nav{float:right; text-align: center; padding: 45px 75px 0 0; font-size: 15.5px; font-weight: 500;}
+.nav li a:hover{
+	padding:5px 5px 12px 5px; 
+	color:#ffd60a;
+	font-weight:800; 
+	border-bottom:2px solid #003566; 
+}
+
+/*프로필*/
+.profile{
+	width: 50px; /* 원하는 너비 값으로 변경 */
+    height: 50px; /* 원하는 높이 값으로 변경 */
+    border-radius: 50%; /* 이미지를 원형으로 만들기 위해 경계를 반원 형태로 설정 */
+    object-fit: cover; /* 이미지가 정해진 크기에 맞게 비율을 조절하고 잘린 부분을 채우도록 설정 */
+}
